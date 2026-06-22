@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="32" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#1F2430" text-anchor="start">Cohort Retention Heatmap</text>
+<text x="32" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" fill="#5B6472" text-anchor="start">Retention percentage by first purchase cohort</text>
+<text x="183.16666666666666" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">0</text>
+<text x="249.49999999999997" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">1</text>
+<text x="315.8333333333333" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">2</text>
+<text x="382.1666666666667" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">3</text>
+<text x="448.5" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">4</text>
+<text x="514.8333333333333" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">5</text>
+<text x="581.1666666666666" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">6</text>
+<text x="647.4999999999999" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">7</text>
+<text x="713.8333333333333" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">8</text>
+<text x="780.1666666666666" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">9</text>
+<text x="846.4999999999999" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">10</text>
+<text x="912.8333333333333" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#5B6472" text-anchor="middle">11</text>
+<text x="140" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-01</text>
+<rect x="150.0" y="95.0" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="95.0" width="64.3" height="35.8" fill="rgb(186,220,207)"/>
+<text x="249.49999999999997" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">29</text>
+<rect x="282.7" y="95.0" width="64.3" height="35.8" fill="rgb(181,217,203)"/>
+<text x="315.8333333333333" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">32</text>
+<rect x="349.0" y="95.0" width="64.3" height="35.8" fill="rgb(180,217,203)"/>
+<text x="382.1666666666667" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">32</text>
+<rect x="415.3" y="95.0" width="64.3" height="35.8" fill="rgb(183,218,204)"/>
+<text x="448.5" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">31</text>
+<rect x="481.7" y="95.0" width="64.3" height="35.8" fill="rgb(181,217,203)"/>
+<text x="514.8333333333333" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">32</text>
+<rect x="548.0" y="95.0" width="64.3" height="35.8" fill="rgb(185,219,206)"/>
+<text x="581.1666666666666" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">30</text>
+<rect x="614.3" y="95.0" width="64.3" height="35.8" fill="rgb(174,214,199)"/>
+<text x="647.4999999999999" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">35</text>
+<rect x="680.7" y="95.0" width="64.3" height="35.8" fill="rgb(172,214,198)"/>
+<text x="713.8333333333333" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">36</text>
+<rect x="747.0" y="95.0" width="64.3" height="35.8" fill="rgb(176,215,200)"/>
+<text x="780.1666666666666" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">34</text>
+<rect x="813.3" y="95.0" width="64.3" height="35.8" fill="rgb(189,221,208)"/>
+<text x="846.4999999999999" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">28</text>
+<rect x="879.7" y="95.0" width="64.3" height="35.8" fill="rgb(185,219,206)"/>
+<text x="912.8333333333333" y="118.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">30</text>
+<text x="140" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-02</text>
+<rect x="150.0" y="132.8" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="132.8" width="64.3" height="35.8" fill="rgb(179,216,202)"/>
+<text x="249.49999999999997" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">33</text>
+<rect x="282.7" y="132.8" width="64.3" height="35.8" fill="rgb(184,219,205)"/>
+<text x="315.8333333333333" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">30</text>
+<rect x="349.0" y="132.8" width="64.3" height="35.8" fill="rgb(170,213,197)"/>
+<text x="382.1666666666667" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">37</text>
+<rect x="415.3" y="132.8" width="64.3" height="35.8" fill="rgb(175,215,200)"/>
+<text x="448.5" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">34</text>
+<rect x="481.7" y="132.8" width="64.3" height="35.8" fill="rgb(184,219,205)"/>
+<text x="514.8333333333333" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">30</text>
+<rect x="548.0" y="132.8" width="64.3" height="35.8" fill="rgb(171,213,197)"/>
+<text x="581.1666666666666" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">36</text>
+<rect x="614.3" y="132.8" width="64.3" height="35.8" fill="rgb(181,217,203)"/>
+<text x="647.4999999999999" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">32</text>
+<rect x="680.7" y="132.8" width="64.3" height="35.8" fill="rgb(174,214,199)"/>
+<text x="713.8333333333333" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">35</text>
+<rect x="747.0" y="132.8" width="64.3" height="35.8" fill="rgb(182,218,204)"/>
+<text x="780.1666666666666" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">31</text>
+<rect x="813.3" y="132.8" width="64.3" height="35.8" fill="rgb(186,220,206)"/>
+<text x="846.4999999999999" y="156.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">29</text>
+<rect x="879.7" y="132.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-03</text>
+<rect x="150.0" y="170.5" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="170.5" width="64.3" height="35.8" fill="rgb(173,214,198)"/>
+<text x="249.49999999999997" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">36</text>
+<rect x="282.7" y="170.5" width="64.3" height="35.8" fill="rgb(184,219,205)"/>
+<text x="315.8333333333333" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">30</text>
+<rect x="349.0" y="170.5" width="64.3" height="35.8" fill="rgb(187,220,207)"/>
+<text x="382.1666666666667" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">29</text>
+<rect x="415.3" y="170.5" width="64.3" height="35.8" fill="rgb(189,221,208)"/>
+<text x="448.5" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">28</text>
+<rect x="481.7" y="170.5" width="64.3" height="35.8" fill="rgb(189,221,208)"/>
+<text x="514.8333333333333" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">28</text>
+<rect x="548.0" y="170.5" width="64.3" height="35.8" fill="rgb(176,215,200)"/>
+<text x="581.1666666666666" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">34</text>
+<rect x="614.3" y="170.5" width="64.3" height="35.8" fill="rgb(180,217,203)"/>
+<text x="647.4999999999999" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">32</text>
+<rect x="680.7" y="170.5" width="64.3" height="35.8" fill="rgb(183,218,204)"/>
+<text x="713.8333333333333" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">31</text>
+<rect x="747.0" y="170.5" width="64.3" height="35.8" fill="rgb(174,214,199)"/>
+<text x="780.1666666666666" y="193.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">35</text>
+<rect x="813.3" y="170.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="170.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-04</text>
+<rect x="150.0" y="208.2" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="208.2" width="64.3" height="35.8" fill="rgb(190,221,209)"/>
+<text x="249.49999999999997" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">28</text>
+<rect x="282.7" y="208.2" width="64.3" height="35.8" fill="rgb(181,217,203)"/>
+<text x="315.8333333333333" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">32</text>
+<rect x="349.0" y="208.2" width="64.3" height="35.8" fill="rgb(173,214,198)"/>
+<text x="382.1666666666667" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">36</text>
+<rect x="415.3" y="208.2" width="64.3" height="35.8" fill="rgb(190,221,209)"/>
+<text x="448.5" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">28</text>
+<rect x="481.7" y="208.2" width="64.3" height="35.8" fill="rgb(198,225,214)"/>
+<text x="514.8333333333333" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">23</text>
+<rect x="548.0" y="208.2" width="64.3" height="35.8" fill="rgb(166,211,194)"/>
+<text x="581.1666666666666" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">39</text>
+<rect x="614.3" y="208.2" width="64.3" height="35.8" fill="rgb(185,219,206)"/>
+<text x="647.4999999999999" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">30</text>
+<rect x="680.7" y="208.2" width="64.3" height="35.8" fill="rgb(181,217,203)"/>
+<text x="713.8333333333333" y="231.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">32</text>
+<rect x="747.0" y="208.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="208.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="208.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-05</text>
+<rect x="150.0" y="246.0" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="246.0" width="64.3" height="35.8" fill="rgb(175,215,200)"/>
+<text x="249.49999999999997" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">34</text>
+<rect x="282.7" y="246.0" width="64.3" height="35.8" fill="rgb(181,218,204)"/>
+<text x="315.8333333333333" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">31</text>
+<rect x="349.0" y="246.0" width="64.3" height="35.8" fill="rgb(181,218,204)"/>
+<text x="382.1666666666667" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">31</text>
+<rect x="415.3" y="246.0" width="64.3" height="35.8" fill="rgb(194,223,211)"/>
+<text x="448.5" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">26</text>
+<rect x="481.7" y="246.0" width="64.3" height="35.8" fill="rgb(194,223,211)"/>
+<text x="514.8333333333333" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">26</text>
+<rect x="548.0" y="246.0" width="64.3" height="35.8" fill="rgb(196,224,213)"/>
+<text x="581.1666666666666" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">24</text>
+<rect x="614.3" y="246.0" width="64.3" height="35.8" fill="rgb(164,210,193)"/>
+<text x="647.4999999999999" y="269.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">40</text>
+<rect x="680.7" y="246.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="246.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="246.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="246.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-06</text>
+<rect x="150.0" y="283.8" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="283.8" width="64.3" height="35.8" fill="rgb(186,220,206)"/>
+<text x="249.49999999999997" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">29</text>
+<rect x="282.7" y="283.8" width="64.3" height="35.8" fill="rgb(173,214,199)"/>
+<text x="315.8333333333333" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">35</text>
+<rect x="349.0" y="283.8" width="64.3" height="35.8" fill="rgb(149,203,183)"/>
+<text x="382.1666666666667" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">47</text>
+<rect x="415.3" y="283.8" width="64.3" height="35.8" fill="rgb(155,206,187)"/>
+<text x="448.5" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">44</text>
+<rect x="481.7" y="283.8" width="64.3" height="35.8" fill="rgb(173,214,199)"/>
+<text x="514.8333333333333" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">35</text>
+<rect x="548.0" y="283.8" width="64.3" height="35.8" fill="rgb(167,211,195)"/>
+<text x="581.1666666666666" y="307.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">38</text>
+<rect x="614.3" y="283.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="680.7" y="283.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="283.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="283.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="283.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="344.905" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-07</text>
+<rect x="150.0" y="321.5" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="344.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="321.5" width="64.3" height="35.8" fill="rgb(173,214,199)"/>
+<text x="249.49999999999997" y="344.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">35</text>
+<rect x="282.7" y="321.5" width="64.3" height="35.8" fill="rgb(210,231,222)"/>
+<text x="315.8333333333333" y="344.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">18</text>
+<rect x="349.0" y="321.5" width="64.3" height="35.8" fill="rgb(155,206,187)"/>
+<text x="382.1666666666667" y="344.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">44</text>
+<rect x="415.3" y="321.5" width="64.3" height="35.8" fill="rgb(210,231,222)"/>
+<text x="448.5" y="344.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">18</text>
+<rect x="481.7" y="321.5" width="64.3" height="35.8" fill="rgb(204,228,218)"/>
+<text x="514.8333333333333" y="344.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">21</text>
+<rect x="548.0" y="321.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="614.3" y="321.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="680.7" y="321.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="321.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="321.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="321.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="382.655" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-08</text>
+<rect x="150.0" y="359.2" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="382.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="359.2" width="64.3" height="35.8" fill="rgb(160,208,190)"/>
+<text x="249.49999999999997" y="382.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">42</text>
+<rect x="282.7" y="359.2" width="64.3" height="35.8" fill="rgb(160,208,190)"/>
+<text x="315.8333333333333" y="382.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">42</text>
+<rect x="349.0" y="359.2" width="64.3" height="35.8" fill="rgb(186,220,207)"/>
+<text x="382.1666666666667" y="382.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">29</text>
+<rect x="415.3" y="359.2" width="64.3" height="35.8" fill="rgb(169,212,196)"/>
+<text x="448.5" y="382.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">38</text>
+<rect x="481.7" y="359.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="548.0" y="359.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="614.3" y="359.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="680.7" y="359.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="359.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="359.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="359.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="420.405" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-09</text>
+<rect x="150.0" y="397.0" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="420.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="397.0" width="64.3" height="35.8" fill="rgb(171,213,197)"/>
+<text x="249.49999999999997" y="420.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">36</text>
+<rect x="282.7" y="397.0" width="64.3" height="35.8" fill="rgb(209,230,221)"/>
+<text x="315.8333333333333" y="420.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">18</text>
+<rect x="349.0" y="397.0" width="64.3" height="35.8" fill="rgb(171,213,197)"/>
+<text x="382.1666666666667" y="420.405" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">36</text>
+<rect x="415.3" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="481.7" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="548.0" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="614.3" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="680.7" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="397.0" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="458.155" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-10</text>
+<rect x="150.0" y="434.8" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="458.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="434.8" width="64.3" height="35.8" fill="rgb(160,208,190)"/>
+<text x="249.49999999999997" y="458.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">42</text>
+<rect x="282.7" y="434.8" width="64.3" height="35.8" fill="rgb(195,224,212)"/>
+<text x="315.8333333333333" y="458.155" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">25</text>
+<rect x="349.0" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="415.3" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="481.7" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="548.0" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="614.3" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="680.7" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="434.8" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="495.905" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-11</text>
+<rect x="150.0" y="472.5" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="495.905" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="282.7" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="349.0" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="415.3" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="481.7" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="548.0" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="614.3" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="680.7" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="472.5" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<text x="140" y="533.655" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#1F2430" text-anchor="end">2025-12</text>
+<rect x="150.0" y="510.2" width="64.3" height="35.8" fill="rgb(38,153,115)"/>
+<text x="183.16666666666666" y="533.655" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#1F2430" text-anchor="middle">100</text>
+<rect x="216.3" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="282.7" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="349.0" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="415.3" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="481.7" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="548.0" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="614.3" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="680.7" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="747.0" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="813.3" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+<rect x="879.7" y="510.2" width="64.3" height="35.8" fill="rgb(248,248,245)"/>
+</svg>

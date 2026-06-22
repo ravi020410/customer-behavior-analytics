@@ -17,7 +17,7 @@ def generate_messy_customer_data(num_orders=5000):
 
     # Simulated Customer ID pool (approx 1,000 distinct customers)
     customer_pool = [f"CUST-{1000 + i}" for i in range(1000)]
-    customer_ids = np.random.choice(customer_pool, num_orders)
+    customer_ids = np.random.choice(customer_pool, num_orders).astype(object)
 
     # Ingest Null Customer IDs (simulating guest checkouts or incomplete registrations as per resume)
     for i in range(num_orders):
@@ -68,8 +68,8 @@ def process_customer_analytics(df):
     print("Beginning Cohort Analysis calculations...")
     # Get the billing month for each transaction
     cleaned_df["OrderMonth"] = cleaned_df["OrderDate"].dt.to_period("M")
-    # Identify the 'Cohort' month (the month of a customer's first purchase)
-    cleaned_df["CohortMonth"] = cleaned_df["OrderMonth"].transform("min")
+    # Identify each customer's first purchase month.
+    cleaned_df["CohortMonth"] = cleaned_df.groupby("CustomerID")["OrderMonth"].transform("min")
 
     # 3. RFM Analysis Calculations
     print("Executing RFM Segmentation...")
@@ -132,7 +132,7 @@ def process_customer_analytics(df):
 
     print("--- Cohort & RFM Calculations Finished Successfully ---")
 
-    return rfm, retention_matrix
+    return cleaned_df, rfm, retention_matrix
 
 if __name__ == "__main__":
     # Create output directory using relative paths
@@ -140,9 +140,11 @@ if __name__ == "__main__":
 
     # Run Simulation
     raw_data = generate_messy_customer_data(5000)
-    rfm_results, cohort_matrix = process_customer_analytics(raw_data)
+    cleaned_orders, rfm_results, cohort_matrix = process_customer_analytics(raw_data)
 
     # Save to CSV Files for reference in relative paths
+    raw_data.to_csv("data/raw_customer_orders.csv", index=False)
+    cleaned_orders.to_csv("data/cleaned_customer_orders.csv", index=False)
     rfm_results.to_csv("data/customer_rfm_segments.csv")
     cohort_matrix.to_csv("data/customer_cohort_retention_matrix.csv")
 

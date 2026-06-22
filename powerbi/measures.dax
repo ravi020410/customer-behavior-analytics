@@ -1,0 +1,4 @@
+Total Revenue = SUM(Fact_Orders[TotalAmount])
+Customers = DISTINCTCOUNT(Fact_Orders[CustomerID])
+Average Customer Value = DIVIDE([Total Revenue], [Customers])
+Champions = CALCULATE(DISTINCTCOUNT(Customer_RFM[CustomerID]), Customer_RFM[Customer_Segment] = "Champions")

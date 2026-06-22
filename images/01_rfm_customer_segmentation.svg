@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="32" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#1F2430" text-anchor="start">RFM Customer Segmentation</text>
+<text x="32" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" fill="#5B6472" text-anchor="start">Customer count by RFM segment</text>
+<line x1="220" y1="92" x2="220" y2="450" stroke="#D8DEE8"/>
+<text x="208" y="131.6664" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F2430" text-anchor="end">Recent/New Customers</text>
+<rect x="220" y="104.9" width="268.1" height="39.4" rx="5" fill="#2E4780"/>
+<text x="496.06049822064057" y="131.6664" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">115</text>
+<text x="208" y="203.2664" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F2430" text-anchor="end">At Risk / Slipping</text>
+<rect x="220" y="176.5" width="393.9" height="39.4" rx="5" fill="#386411"/>
+<text x="621.932384341637" y="203.2664" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">169</text>
+<text x="208" y="274.8664" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F2430" text-anchor="end">Loyal Customers</text>
+<rect x="220" y="248.1" width="482.5" height="39.4" rx="5" fill="#804126"/>
+<text x="710.508896797153" y="274.8664" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">207</text>
+<text x="208" y="346.4663999999999" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F2430" text-anchor="end">Champions</text>
+<rect x="220" y="319.7" width="505.8" height="39.4" rx="5" fill="#6E8BC3"/>
+<text x="733.8185053380782" y="346.4663999999999" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">217</text>
+<text x="208" y="418.06639999999993" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#1F2430" text-anchor="end">Hibernating / Lost</text>
+<rect x="220" y="391.3" width="655.0" height="39.4" rx="5" fill="#77A35B"/>
+<text x="883.0" y="418.06639999999993" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#1F2430" text-anchor="start">281</text>
+</svg>

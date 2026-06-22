@@ -73,3 +73,87 @@
     - Shows cohort retention logic based on each customer's true first purchase month.
     - Shows lifecycle marketing and churn-risk thinking.
     - Strong supporting project next to the larger SaaS and retail showcase repositories.
+## Project Overview
+
+Customer Behavior Analytics project built as a recruiter-ready analytics case study with reproducible data, SQL, Python, dashboards, reports, and business recommendations.
+
+## Dataset Information
+
+Data is organized into `data/raw` and `data/processed` so reviewers can distinguish source-like inputs from analysis-ready outputs.
+
+## Tech Stack
+
+Python, pandas, SQL, Excel/BI planning, dashboard documentation, Git, and GitHub.
+
+## Architecture Diagram
+
+See `docs/` and dashboard documentation for the data flow, modeling approach, and reporting layers.
+
+## Project Workflow
+
+1. Generate or collect source-like data.
+2. Validate and clean the dataset.
+3. Build processed analytical tables.
+4. Analyze KPIs with SQL and Python.
+5. Create dashboard and reporting assets.
+6. Convert insights into recommendations.
+
+## KPIs
+
+- Customers Segmented
+- Total Revenue
+- Champions
+- Month 1 Retention
+- Churn Risk
+
+## Methodology
+
+The analysis uses data quality checks, KPI aggregation, segment analysis, trend analysis, and business recommendation framing.
+
+## Visualizations
+
+Dashboard previews and chart assets are stored in `images/`.
+
+## Dashboard Screenshots
+
+Dashboard documentation and walkthrough files are stored in `dashboards/`.
+
+## Key Insights
+
+- The project identifies performance patterns across the most important business dimensions.
+- Processed datasets make the analysis reproducible.
+- The dashboard flow supports executive review and analyst drill-down.
+
+## Business Recommendations
+
+- Review the weakest segment first for short-term improvement.
+- Use the strongest segment as a performance benchmark.
+- Track the core KPI set weekly.
+
+## Folder Structure
+
+```text
+data/raw
+data/processed
+notebooks
+sql
+dashboards
+reports
+images
+src
+docs
+```
+
+## Results
+
+The repository now meets a standardized recruiter-ready analytics portfolio structure.
+
+## Future Enhancements
+
+- Add live BI platform files when Power BI Desktop or Tableau is available.
+- Add automated CI checks for data quality.
+- Add forecasting models where historical signal supports it.
+
+## Author
+
+Ravikant Yadav - Data Analyst Portfolio

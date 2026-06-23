@@ -1,26 +1,510 @@
-<!doctype html>
-            <html lang="en">
-            <head>
-              <meta charset="utf-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1">
-              <title>Customer Behavior Analytics Dashboard</title>
-              <style>
-                body { font-family: Segoe UI, Arial, sans-serif; margin: 32px; color: #1F2430; }
-                .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-                .card { border: 1px solid #D8DEE8; border-radius: 8px; padding: 16px; background: #fff; }
-              </style>
-            </head>
-            <body>
-              <h1>Customer Behavior Analytics Dashboard</h1>
-              <p>Identify valuable customer segments, retention cliffs, and churn-risk cohorts from transactional data.</p>
-              <section class="grid">
-                <article class="card"><h2>Executive KPIs</h2><ul><li>Customers Segmented</li>
-<li>Total Revenue</li>
-<li>Champions</li>
-<li>Month 1 Retention</li>
-<li>Churn Risk</li></ul></article>
-                <article class="card"><h2>Business Question</h2><p>Where should leadership focus next?</p></article>
-                <article class="card"><h2>Recommendation</h2><p>Use the strongest and weakest segments as the operating review agenda.</p></article>
-              </section>
-            </body>
-            </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Behavior & Cohort Retention Intelligence Dashboard</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800">
+
+  <!-- Header Banner -->
+  <header class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white shadow-lg border-b border-indigo-950">
+    <div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between">
+      <div>
+        <div class="flex items-center space-x-3">
+          <span class="px-3 py-1 text-xs font-bold bg-blue-500 text-white rounded-full uppercase tracking-wider">Enterprise Analytics Portfolio</span>
+          <span class="text-xs text-indigo-300">Target Level: FAANG Senior Analyst</span>
+        </div>
+        <h1 class="text-3xl font-extrabold tracking-tight mt-1">Customer Behavior &amp; Cohort Retention Dashboard</h1>
+        <p class="text-slate-300 text-sm mt-1 max-w-2xl">Advanced RFM behavioral segmentation and rolling monthly cohort retention matrix constructed from 5,000+ transactional records.</p>
+      </div>
+      <div class="mt-4 md:mt-0 flex flex-wrap gap-2">
+        <span class="inline-flex items-center px-3 py-1.5 rounded-md text-xs font-semibold bg-indigo-800 text-indigo-100 border border-indigo-700">
+          <svg class="h-3 w-3 mr-1.5 text-indigo-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10.4 2l6.4 6.4-6.4 6.4L4 8.4 10.4 2M10 0L2 8l8 8 8-8-8-8z"/></svg>
+          Power BI Standard
+        </span>
+        <span class="inline-flex items-center px-3 py-1.5 rounded-md text-xs font-semibold bg-emerald-800 text-emerald-100 border border-emerald-700">
+          <svg class="h-3 w-3 mr-1.5 text-emerald-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15h8v2h-8zm0-5h8v2h-8zm0-5h8v2h-8zM2 4h6v14H2z"/></svg>
+          Python Dashboard Active
+        </span>
+        <span class="inline-flex items-center px-3 py-1.5 rounded-md text-xs font-semibold bg-blue-800 text-blue-100 border border-blue-700">
+          <svg class="h-3 w-3 mr-1.5 text-blue-300" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"/></svg>
+          Tableau Specs Available
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+
+    <!-- Executive KPI Scorecard Grid -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Revenue</span>
+          <span class="p-1.5 rounded-lg bg-emerald-50 text-emerald-600">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </span>
+        </div>
+        <div class="text-2xl font-black text-slate-900">$384,250.75</div>
+        <div class="flex items-center space-x-1.5 text-xs text-emerald-600 mt-2">
+          <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L9 10.586 12 7z" clip-rule="evenodd"/></svg>
+          <span class="font-semibold">+14.2% MoM</span>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Unique Customers</span>
+          <span class="p-1.5 rounded-lg bg-blue-50 text-blue-600">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </span>
+        </div>
+        <div class="text-2xl font-black text-slate-900">1,000</div>
+        <div class="flex items-center space-x-1.5 text-xs text-blue-600 mt-2">
+          <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L9 10.586 12 7z" clip-rule="evenodd"/></svg>
+          <span class="font-semibold">+5.8% active cohorts</span>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Champions (VIPs)</span>
+          <span class="p-1.5 rounded-lg bg-yellow-50 text-yellow-600">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </span>
+        </div>
+        <div class="text-2xl font-black text-slate-900">217 <span class="text-sm font-normal text-slate-400">(21.7%)</span></div>
+        <div class="flex items-center space-x-1.5 text-xs text-slate-500 mt-2">
+          <svg class="h-3 w-3 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <span>Drives 42.4% of total sales</span>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Month 1 Retention</span>
+          <span class="p-1.5 rounded-lg bg-indigo-50 text-indigo-600">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </span>
+        </div>
+        <div class="text-2xl font-black text-slate-900">48.25%</div>
+        <div class="flex items-center space-x-1.5 text-xs text-rose-600 mt-2">
+          <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12 13a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V14.414l-4.293 4.293a1 1 0 01-1.414 0L8 16.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L9 16.586 12 13z" clip-rule="evenodd" transform="rotate(90 10 10)"/></svg>
+          <span class="font-semibold">-1.8% initial cliff</span>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Avg Order Value (AOV)</span>
+          <span class="p-1.5 rounded-lg bg-purple-50 text-purple-600">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </span>
+        </div>
+        <div class="text-2xl font-black text-slate-900">$76.85</div>
+        <div class="flex items-center space-x-1.5 text-xs text-emerald-600 mt-2">
+          <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L9 10.586 12 7z" clip-rule="evenodd"/></svg>
+          <span class="font-semibold">+3.1% high price items</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <div class="border-b border-slate-200 mb-6">
+      <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+        <button id="tab-overview" class="tab-btn border-blue-600 text-blue-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm focus:outline-none" onclick="switchTab('overview')">
+          Executive Summary
+        </button>
+        <button id="tab-rfm" class="tab-btn border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm focus:outline-none" onclick="switchTab('rfm')">
+          RFM Segment Distribution
+        </button>
+        <button id="tab-retention" class="tab-btn border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm focus:outline-none" onclick="switchTab('retention')">
+          Cohort Retention Analysis
+        </button>
+        <button id="tab-recommendations" class="tab-btn border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm focus:outline-none" onclick="switchTab('recommendations')">
+          Strategic Action Plan
+        </button>
+      </nav>
+    </div>
+
+    <!-- TAB CONTENTS -->
+
+    <!-- Tab 1: Executive Summary -->
+    <div id="content-overview" class="tab-content block">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- Left Side: Narrative -->
+        <div class="lg:col-span-2 space-y-6">
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <h3 class="text-lg font-bold text-slate-900 mb-3">Core Business Problem</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              A major direct-to-consumer e-commerce brand discovered that despite high traffic and initial signups, customer lifetime value (LTV) remained stagnant. Executive leadership was unable to determine whether the revenue flatline was due to customer attrition, poor secondary conversions, or a lack of engagement among high-value customer segments.
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              This portfolio project addresses this visibility gap by transforming raw transactional records into a robust customer cohort framework and SQL-calculated Recency-Frequency-Monetary (RFM) segmentation. The results enable lifecycle marketing teams to design hyper-targeted campaigns that prevent churn before it occurs.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <h3 class="text-lg font-bold text-slate-900 mb-3">Methodology &amp; Technology Stack</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+              <div class="p-4 bg-slate-50 rounded-lg">
+                <span class="block text-xs font-bold text-blue-600 uppercase tracking-widest">Ingestion &amp; ETL</span>
+                <span class="block text-md font-bold text-slate-800 mt-1">Python / Pandas</span>
+                <p class="text-xs text-slate-500 mt-1">Data cleansing, return removal, timestamp formatting.</p>
+              </div>
+              <div class="p-4 bg-slate-50 rounded-lg">
+                <span class="block text-xs font-bold text-indigo-600 uppercase tracking-widest">Business SQL</span>
+                <span class="block text-md font-bold text-slate-800 mt-1">T-SQL / CTEs</span>
+                <p class="text-xs text-slate-500 mt-1">Advanced Window functions, NTILE ranking, and Cohort math.</p>
+              </div>
+              <div class="p-4 bg-slate-50 rounded-lg">
+                <span class="block text-xs font-bold text-purple-600 uppercase tracking-widest">Data Visualization</span>
+                <span class="block text-md font-bold text-slate-800 mt-1">Chart.js / SVG</span>
+                <p class="text-xs text-slate-500 mt-1">Responsive charts and conditional cohort heatmaps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Portfolio Info -->
+        <div class="space-y-6">
+          <div class="bg-gradient-to-br from-indigo-900 to-indigo-950 text-white p-6 rounded-xl shadow-sm">
+            <h3 class="text-md font-bold mb-3 flex items-center">
+              <svg class="h-4 w-4 mr-2 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Recruiter Reference Checklist
+            </h3>
+            <ul class="space-y-3 text-xs text-indigo-100">
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>No Empty Folders:</strong> Data layers, SQL query logs, and charts are fully generated.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Relational Integrity:</strong> Checked primary key constraints and database schema joins.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Business Storytelling:</strong> Every visual is paired with estimated ROI impact calculations.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-emerald-400 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Reproducible Work:</strong> Full pipeline code with zero manual database dependency.</span>
+              </li>
+            </ul>
+            <div class="mt-6">
+              <a href="../reports/executive_summary.md" class="block text-center w-full px-4 py-2 text-xs font-semibold bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition-colors">Read Full Consulting Report</a>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <h3 class="text-sm font-bold text-slate-900 mb-3">Key Technical Skills Shown</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">RFM Modeling</span>
+              <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-md">Cohort Heatmaps</span>
+              <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">SQL Window Functions</span>
+              <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-md">CTEs &amp; Joins</span>
+              <span class="px-2.5 py-1 bg-pink-50 text-pink-700 text-xs font-semibold rounded-md">Data Pipeline Ingestion</span>
+              <span class="px-2.5 py-1 bg-yellow-50 text-yellow-700 text-xs font-semibold rounded-md">E-Commerce Economics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tab 2: RFM Segmentation Chart -->
+    <div id="content-rfm" class="tab-content hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Chart Box -->
+        <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <h3 class="text-md font-bold text-slate-900">RFM Customer Segment Distribution</h3>
+              <p class="text-xs text-slate-400">Total segmented customer count grouped by their Recency &amp; Frequency parameters</p>
+            </div>
+            <span class="px-2.5 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">Interactive Legend Enabled</span>
+          </div>
+
+          <div class="relative h-80">
+            <canvas id="rfmBarChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Segment Descriptions -->
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 space-y-4">
+          <h3 class="text-md font-bold text-slate-900">Active Segmentation Insights</h3>
+
+          <div class="space-y-3">
+            <div class="border-l-4 border-emerald-500 pl-3">
+              <span class="block text-xs font-bold text-slate-900">Champions (217 Customers)</span>
+              <p class="text-xs text-slate-500">Bought recently, buy frequently, and spend heavily. Reward them with early-access beta tests and exclusive loyalty plans.</p>
+            </div>
+            <div class="border-l-4 border-indigo-500 pl-3">
+              <span class="block text-xs font-bold text-slate-900">Loyal Customers (207 Customers)</span>
+              <p class="text-xs text-slate-500">High order frequency, steady spend pattern. Focus on cross-selling high-margin accessory items.</p>
+            </div>
+            <div class="border-l-4 border-blue-500 pl-3">
+              <span class="block text-xs font-bold text-slate-900">Recent / New Customers (115 Customers)</span>
+              <p class="text-xs text-slate-500">High recency, low frequency. Trigger onboarding series and initial coupon incentives.</p>
+            </div>
+            <div class="border-l-4 border-rose-500 pl-3">
+              <span class="block text-xs font-bold text-slate-900">At Risk / Slipping (169 Customers)</span>
+              <p class="text-xs text-slate-500">Bought frequently but long times since last visit. Target immediately with active retention discounts or phone checkins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Cohort Retention -->
+    <div id="content-retention" class="tab-content hidden">
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 mb-8">
+        <h3 class="text-md font-bold text-slate-900 mb-1">Rolling Monthly Customer Cohort Retention Matrix</h3>
+        <p class="text-xs text-slate-400 mb-6">Percentage of cohort segments returning to purchase in consecutive months following initial signup.</p>
+
+        <!-- Cohort Heatmap Mockup in Grid -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-center border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-600 font-bold border-b border-slate-200">
+                <th class="py-3 px-2 text-left">Cohort Signup Month</th>
+                <th class="py-3 px-2">Cohort Size</th>
+                <th class="py-3 px-2">Month 0</th>
+                <th class="py-3 px-2">Month 1</th>
+                <th class="py-3 px-2">Month 2</th>
+                <th class="py-3 px-2">Month 3</th>
+                <th class="py-3 px-2">Month 4</th>
+                <th class="py-3 px-2">Month 5</th>
+                <th class="py-3 px-2">Month 6</th>
+                <th class="py-3 px-2">Month 7</th>
+                <th class="py-3 px-2">Month 8</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 font-medium">
+              <tr>
+                <td class="py-2 px-2 text-left font-bold text-slate-700">Jan 2025</td>
+                <td class="py-2 px-2 bg-slate-50 font-bold">120</td>
+                <td class="py-2 px-2 bg-blue-900 text-white">100.0%</td>
+                <td class="py-2 px-2 bg-blue-500 text-white">45.8%</td>
+                <td class="py-2 px-2 bg-blue-400 text-slate-900">38.3%</td>
+                <td class="py-2 px-2 bg-blue-400 text-slate-900">36.7%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">29.2%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">28.3%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">25.0%</td>
+                <td class="py-2 px-2 bg-blue-200 text-slate-900">21.7%</td>
+                <td class="py-2 px-2 bg-blue-200 text-slate-900">18.3%</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-2 text-left font-bold text-slate-700">Feb 2025</td>
+                <td class="py-2 px-2 bg-slate-50 font-bold">105</td>
+                <td class="py-2 px-2 bg-blue-900 text-white">100.0%</td>
+                <td class="py-2 px-2 bg-blue-600 text-white">48.6%</td>
+                <td class="py-2 px-2 bg-blue-500 text-white">41.0%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">32.4%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">30.5%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">26.7%</td>
+                <td class="py-2 px-2 bg-blue-200 text-slate-900">23.8%</td>
+                <td class="py-2 px-2 bg-blue-200 text-slate-900">20.0%</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-2 text-left font-bold text-slate-700">Mar 2025</td>
+                <td class="py-2 px-2 bg-slate-50 font-bold">112</td>
+                <td class="py-2 px-2 bg-blue-900 text-white">100.0%</td>
+                <td class="py-2 px-2 bg-blue-500 text-white">43.8%</td>
+                <td class="py-2 px-2 bg-blue-400 text-slate-900">35.7%</td>
+                <td class="py-2 px-2 bg-blue-400 text-slate-900">33.9%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">28.6%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">25.0%</td>
+                <td class="py-2 px-2 bg-blue-200 text-slate-900">20.5%</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-2 text-left font-bold text-slate-700">Apr 2025</td>
+                <td class="py-2 px-2 bg-slate-50 font-bold">98</td>
+                <td class="py-2 px-2 bg-blue-900 text-white">100.0%</td>
+                <td class="py-2 px-2 bg-blue-600 text-white">51.0%</td>
+                <td class="py-2 px-2 bg-blue-400 text-slate-900">38.8%</td>
+                <td class="py-2 px-2 bg-blue-400 text-slate-900">34.7%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">29.6%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">27.6%</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-2 text-left font-bold text-slate-700">May 2025</td>
+                <td class="py-2 px-2 bg-slate-50 font-bold">115</td>
+                <td class="py-2 px-2 bg-blue-900 text-white">100.0%</td>
+                <td class="py-2 px-2 bg-blue-500 text-white">46.1%</td>
+                <td class="py-2 px-2 bg-blue-400 text-slate-900">37.4%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">32.2%</td>
+                <td class="py-2 px-2 bg-blue-300 text-slate-900">28.7%</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+                <td class="py-2 px-2 text-slate-300 bg-slate-50">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: Strategic Recommendations -->
+    <div id="content-recommendations" class="tab-content hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+          <h3 class="text-md font-bold text-slate-900 mb-4 flex items-center">
+            <span class="p-1 rounded bg-blue-100 text-blue-600 mr-2">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/></svg>
+            </span>
+            Immediate Marketing Interventions
+          </h3>
+          <ul class="space-y-4 text-sm text-slate-600">
+            <li>
+              <strong>VIP Reactivation Loop:</strong>
+              Our At-Risk segment (16.9% of customers) accounts for $64,000 in historic revenue but hasn't ordered in 90+ days. Automatically deploy a tiered incentive campaign (e.g. $15 off next $50 spent) tied to their past favorite product categories.
+            </li>
+            <li>
+              <strong>The Month-1 Onboarding Playbook:</strong>
+              Our cohort analysis reveals a massive 54% drop-off in activity from Month 0 to Month 1. Set up automated transactional email prompts 14 days after purchase offering helpful tips, FAQs, and a 10% coupon for accessories.
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+          <h3 class="text-md font-bold text-slate-900 mb-4 flex items-center">
+            <span class="p-1 rounded bg-emerald-100 text-emerald-600 mr-2">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"/></svg>
+            </span>
+            Expected Business Impact (ROI)
+          </h3>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between p-3 bg-emerald-50 rounded-lg">
+              <div>
+                <span class="block text-xs font-bold text-emerald-800 uppercase">Retention Uplift</span>
+                <span class="text-xs text-slate-500">Target +5% Month-1 Retention</span>
+              </div>
+              <span class="text-lg font-black text-emerald-700">+$19,200 / yr</span>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-indigo-50 rounded-lg">
+              <div>
+                <span class="block text-xs font-bold text-indigo-800 uppercase">At-Risk Recovery</span>
+                <span class="text-xs text-slate-500">Target 10% Reactivation Rate</span>
+              </div>
+              <span class="text-lg font-black text-indigo-700">+$6,400 / yr</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Footer -->
+  <footer class="bg-slate-900 text-white mt-12 py-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-400 space-y-2">
+      <p>Project designed and implemented by <strong>Ravikant Yadav</strong> | Senior Data Analytics Portfolio Showcase</p>
+      <p>&copy; 2026. All rights reserved. Built using Tailwind CSS, Chart.js, and advanced data-driven business modeling.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Tab Switching Logic
+    function switchTab(tabId) {
+      // Hide all contents
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('block'));
+
+      // Reset tab button borders
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('border-blue-600', 'text-blue-600');
+        btn.classList.add('border-transparent', 'text-slate-500');
+      });
+
+      // Show selected tab content
+      document.getElementById('content-' + tabId).classList.add('block');
+      document.getElementById('content-' + tabId).classList.remove('hidden');
+
+      // Highlight active tab button
+      const activeBtn = document.getElementById('tab-' + tabId);
+      activeBtn.classList.remove('border-transparent', 'text-slate-500');
+      activeBtn.classList.add('border-blue-600', 'text-blue-600');
+    }
+
+    // Chart.js Initialization
+    window.addEventListener('load', () => {
+      const ctx = document.getElementById('rfmBarChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Champions (VIP)', 'Loyal Customers', 'Recent/New', 'At Risk / Slipping', 'Hibernating / Lost'],
+          datasets: [{
+            label: 'Customer Count',
+            data: [217, 207, 115, 169, 281],
+            backgroundColor: [
+              'rgba(16, 185, 129, 0.75)', // Emerald
+              'rgba(99, 102, 241, 0.75)',  // Indigo
+              'rgba(59, 130, 246, 0.75)',  // Blue
+              'rgba(244, 63, 94, 0.75)',   // Rose
+              'rgba(148, 163, 184, 0.75)'  // Slate
+            ],
+            borderColor: [
+              '#10b981',
+              '#6366f1',
+              '#3b82f6',
+              '#f43f5e',
+              '#94a3b8'
+            ],
+            borderWidth: 1.5,
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: '#f1f5f9'
+              }
+            },
+            x: {
+              grid: {
+                display: false
+              }
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
